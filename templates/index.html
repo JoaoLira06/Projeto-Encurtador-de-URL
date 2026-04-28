@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <p>Aqui voce encurta a sua URL.</p>
+    </div>
+
+    <div class="shorter">
+            <input type="url" name="url" id="urlInput" placeholder="Cole sua URL aqui" required>
+            <button onclick="shortenUrl()">Encurtar</button>
+    </div>
+
+   <div class="result" id="result" style="display:none;">
+            <p>URL encurtada:</p>
+            <a id="shortUrl" href="#" target="_blank" onclick="updateStats()"></a>
+            <button onclick="copyUrl()">Copiar</button>
+            <p>Acessos: <span id="accessCount">0</span></p>
+        </div>
+
+
+    <script src="/static/script.js"></script>
 </body>
 </html>
