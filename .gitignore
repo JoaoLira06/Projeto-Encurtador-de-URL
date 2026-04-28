@@ -1,1 +1,6 @@
-/.kiro
+venv/
+__pycache__/
+*.pyc
+*.db
+.env
+.kiro/
